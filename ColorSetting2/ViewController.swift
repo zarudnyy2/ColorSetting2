@@ -10,25 +10,25 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var colorView: UIView!
     
-    @IBOutlet var rSlider: UISlider!
-    @IBOutlet var gSlider: UISlider!
-    @IBOutlet var bSlider: UISlider!
+    @IBOutlet var redSlider: UISlider!
+    @IBOutlet var greenSlider: UISlider!
+    @IBOutlet var blueSlider: UISlider!
     
-    @IBOutlet var rLabel: UILabel!
-    @IBOutlet var gLabel: UILabel!
-    @IBOutlet var bLabel: UILabel!
+    @IBOutlet var redLabel: UILabel!
+    @IBOutlet var greenLabel: UILabel!
+    @IBOutlet var blueLabel: UILabel!
     
-    @IBOutlet var rView: UILabel!
-    @IBOutlet var gView: UILabel!
-    @IBOutlet var bView: UILabel!
+    @IBOutlet var redValue: UILabel!
+    @IBOutlet var greenValue: UILabel!
+    @IBOutlet var blueValue: UILabel!
     
     private func changeColor() {
-        colorView.backgroundColor = UIColor(red: CGFloat(rSlider.value), green: CGFloat(gSlider.value), blue: CGFloat(bSlider.value), alpha: 1)
+        colorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
-    private func changeView() {
-        rView.text = String(round(rSlider.value * 100) / 100)
-        gView.text = String(round(gSlider.value * 100) / 100)
-        bView.text = String(round(bSlider.value * 100) / 100)
+    private func changeValue() {
+        redValue.text = String(round(redSlider.value * 100) / 100)
+        greenValue.text = String(round(greenSlider.value * 100) / 100)
+        blueValue.text = String(round(blueSlider.value * 100) / 100)
     }
     
     override func viewDidLoad() {
@@ -36,18 +36,17 @@ class ViewController: UIViewController {
         
         colorView.layer.cornerRadius = 20
         
-        rLabel.text = "Red"
-        gLabel.text = "Green"
-        bLabel.text = "Blue"
+        redLabel.text = "Red"
+        greenLabel.text = "Green"
+        blueLabel.text = "Blue"
         
-        rSlider.minimumTrackTintColor = .red
-        gSlider.minimumTrackTintColor = .green
-        bSlider.minimumTrackTintColor = .blue
-        
+        redSlider.minimumTrackTintColor = .red
+        greenSlider.minimumTrackTintColor = .green
+        blueSlider.minimumTrackTintColor = .blue
         }
         
     @IBAction func setupColor() {
         changeColor()
-        changeView()
+        changeValue()
     }
 }

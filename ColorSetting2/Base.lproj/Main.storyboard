@@ -135,16 +135,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bLabel" destination="h8A-uO-EuY" id="grC-4e-SLF"/>
-                        <outlet property="bSlider" destination="XA9-Md-Lx2" id="3Zk-5W-yzv"/>
-                        <outlet property="bView" destination="2x4-eX-c0a" id="fAD-DQ-s1g"/>
+                        <outlet property="blueLabel" destination="h8A-uO-EuY" id="grC-4e-SLF"/>
+                        <outlet property="blueSlider" destination="XA9-Md-Lx2" id="3Zk-5W-yzv"/>
+                        <outlet property="blueValue" destination="2x4-eX-c0a" id="fAD-DQ-s1g"/>
                         <outlet property="colorView" destination="1hl-SQ-ulf" id="8ik-yr-lGE"/>
-                        <outlet property="gLabel" destination="Oqb-JQ-llo" id="aSq-qb-EPn"/>
-                        <outlet property="gSlider" destination="98B-hu-O5n" id="7md-HL-Qu9"/>
-                        <outlet property="gView" destination="1nu-OM-0iG" id="mty-tT-Dfa"/>
-                        <outlet property="rLabel" destination="s6a-ZM-lo9" id="L3Y-1n-150"/>
-                        <outlet property="rSlider" destination="VGA-St-vaN" id="jG1-qQ-xfO"/>
-                        <outlet property="rView" destination="UJu-fC-R1S" id="Vwo-tS-Smt"/>
+                        <outlet property="greenLabel" destination="Oqb-JQ-llo" id="aSq-qb-EPn"/>
+                        <outlet property="greenSlider" destination="98B-hu-O5n" id="7md-HL-Qu9"/>
+                        <outlet property="greenValue" destination="1nu-OM-0iG" id="mty-tT-Dfa"/>
+                        <outlet property="redLabel" destination="s6a-ZM-lo9" id="L3Y-1n-150"/>
+                        <outlet property="redSlider" destination="VGA-St-vaN" id="jG1-qQ-xfO"/>
+                        <outlet property="redValue" destination="UJu-fC-R1S" id="Vwo-tS-Smt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
